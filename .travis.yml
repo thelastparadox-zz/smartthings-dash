@@ -6,6 +6,8 @@ php:
   - hhvm # on Trusty only
   - nightly
 
-composer install
+# PHP commands pre environment
+install: composer install
+install: composer self-update
 
 install: php vendor/vendors.php
