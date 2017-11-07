@@ -6,6 +6,5 @@ php:
 
 install: 
   - composer install
-  - php vendor/vendors.php
   - php artisan migrate
   - php artisan db:seed
